@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Good Food</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="hero.css" />
+    <link rel="stylesheet" href="product.css" />
+    <link rel="stylesheet" href="services.css" />
+    <link rel="stylesheet" href="testimonials.css" />
+    <link rel="stylesheet" href="newsletter.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="icon" type="image/x-icon" href="Images/favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/f056a62cc9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <h3><img src="Images/logo.png" alt="Food Logo" />Good Food</h3>
+        </div>
+        <div class="nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="cart.html">Cart</a></li>
+          </ul>
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search" />
+          <button class="search"><i class="fas fa-search"></i></button>
+          <button class="cart" onclick="location.href='cart.html'">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero-text">
+          <div class="bike-riding" id="bikeRiding">
+            <button class="delivery-btn" id="deliveryBtn">Bike Delivery</button
+            ><img src="/Images/riding.png" alt="" id="bikeImg" />
+          </div>
+          <h1>
+            The Fastest <br />
+            <span>Delivery</span> <br />
+            in Your City
+          </h1>
+          <p>
+            With an unparalleled experience in bike delivery leadership, we are
+            always capable of delivering the best service every time. Our
+            skilled and professional riders ensure your orders reach you at your
+            preferred location promptly. Place your order now and experience
+            swift and entirely secure home delivery by us.
+          </p>
+          <div class="food-buttons">
+            <button class="order-now">Order Now</button>
+            <div class="order-process">
+              <button>
+                <img src="Images/play-arrow.png" alt="" />Order Process
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="food-images">
+          <div class="food-item">
+            <img src="Images/Burger.jpg" alt="Burger" />
+            <h2>Burger</h2>
+            <p>Mushroom Sauce</p>
+            <p class="price">$5.15</p>
+          </div>
+          <div class="food-item">
+            <img src="Images/Food-Combo.jpg" alt="Food Combo" />
+            <h2>Food Combo</h2>
+            <p>Mushroom Sauce</p>
+            <p class="price">$9.15</p>
+          </div>
+          <div class="food-item">
+            <img src="Images/Pizza.jpg" alt="Pizza" />
+            <h2>Pizza</h2>
+            <p>Mushroom Sauce</p>
+            <p class="price">$6.15</p>
+          </div>
+          <div class="food-item">
+            <img src="Images/Cake.jpg" alt="Cake" />
+            <h2>Cake</h2>
+            <p>Mushroom Sauce</p>
+            <p class="price">$5.15</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="info-section">
+        <div class="timer">
+          <div class="icon">
+            <img src="Images/alarm-clock.png" alt="Working Time Icon" />
+          </div>
+          <div class="text">
+            <h3>Today 10:00am - 10:00pm</h3>
+            <p>Working time</p>
+          </div>
+        </div>
+        <div class="location">
+          <div class="icon">
+            <img src="Images/placeholder.png" alt="Location Icon" />
+          </div>
+          <div class="text">
+            <h3>Mohammadpur, Dhaka</h3>
+            <p>Our Location</p>
+          </div>
+        </div>
+        <div class="phone">
+          <div class="icon">
+            <img src="Images/telephone.png" alt="Phone Icon" />
+          </div>
+          <div class="text">
+            <h3>+88 017 0000 0000</h3>
+            <p>Phone Number</p>
+          </div>
+        </div>
+      </section>
+      <!-- Product -->
+      <section class="most-popular">
+        <h4>Product</h4>
+        <h1>Most Popular Items</h1>
+        <div class="popular-items">
+          <div
+            class="popular-item"
+            data-name="Snacks"
+            data-price="15.00"
+            data-rating="4.9"
+            data-image="Images/Snack.jpg"
+          >
+            <img src="Images/Snack.jpg" alt="Snack" />
+            <h3>Snacks</h3>
+            <div class="item-info">
+              <span class="rating">★ 4.9</span>
+              <span class="price">$15.00</span>
+            </div>
+            <button class="add-to-cart" onclick="addToCart(this)">
+              Add To Cart
+            </button>
+          </div>
+          <div
+            class="popular-item"
+            data-name="Meat Skewer"
+            data-price="25.50"
+            data-rating="5.0"
+            data-image="Images/meat-skewer.jpg"
+          >
+            <img src="Images/meat-skewer.jpg" alt="Meat Skewer" />
+            <h3>Meat Skewer</h3>
+            <div class="item-info">
+              <span class="rating">★ 5.0</span>
+              <span class="price">$25.50</span>
+            </div>
+            <button class="add-to-cart" onclick="addToCart(this)">
+              Add To Cart
+            </button>
+          </div>
+          <div
+            class="popular-item"
+            data-name="Meat"
+            data-price="12.00"
+            data-rating="4.9"
+            data-image="Images/meat.jpg"
+          >
+            <img src="Images/meat.jpg" alt="Meat" />
+            <h3>Meat</h3>
+            <div class="item-info">
+              <span class="rating">★ 4.9</span>
+              <span class="price">$12.00</span>
+            </div>
+            <button class="add-to-cart" onclick="addToCart(this)">
+              Add To Cart
+            </button>
+          </div>
+          <div
+            class="popular-item"
+            data-name="Meatloaf"
+            data-price="18.50"
+            data-rating="5.0"
+            data-image="Images/meatloaf.jpg"
+          >
+            <img src="Images/meatloaf.jpg" alt="Meatloaf" />
+            <h3>Meatloaf</h3>
+            <div class="item-info">
+              <span class="rating">★ 5.0</span>
+              <span class="price">$18.50</span>
+            </div>
+            <button class="add-to-cart" onclick="addToCart(this)">
+              Add To Cart
+            </button>
+          </div>
+          <div
+            class="popular-item"
+            data-name="Pancakes"
+            data-price="25.00"
+            data-rating="4.9"
+            data-image="Images/pancakes.jpg"
+          >
+            <img src="Images/pancakes.jpg" alt="Pancakes" />
+            <h3>Pancakes</h3>
+            <div class="item-info">
+              <span class="rating">★ 4.9</span>
+              <span class="price">$25.00</span>
+            </div>
+            <button class="add-to-cart" onclick="addToCart(this)">
+              Add To Cart
+            </button>
+          </div>
+          <div
+            class="popular-item"
+            data-name="Spring Roll"
+            data-price="15.00"
+            data-rating="4.9"
+            data-image="Images/spring-roll.jpg"
+          >
+            <img src="Images/spring-roll.jpg" alt="Spring Roll" />
+            <h3>Spring Roll</h3>
+            <div class="item-info">
+              <span class="rating">★ 4.9</span>
+              <span class="price">$15.00</span>
+            </div>
+            <button class="add-to-cart" onclick="addToCart(this)">
+              Add To Cart
+            </button>
+          </div>
+          <div class="extra-items" style="display: none">
+            <div
+              class="popular-item"
+              data-name="Fish Fillet"
+              data-price="20.00"
+              data-rating="4.8"
+              data-image="Images/Fish-fillet.jpg"
+            >
+              <img src="Images/Fish-fillet.jpg" alt="Fish Fillet" />
+              <h3>Fish Fillet</h3>
+              <div class="item-info">
+                <span class="rating">★ 4.8</span>
+                <span class="price">$20.00</span>
+              </div>
+              <button class="add-to-cart" onclick="addToCart(this)">
+                Add To Cart
+              </button>
+            </div>
+            <div
+              class="popular-item"
+              data-name="Italian Food Pasta"
+              data-price="22.00"
+              data-rating="4.7"
+              data-image="Images/Italian-food-pasta.jpg"
+            >
+              <img
+                src="Images/Italian-food-pasta.jpg"
+                alt="Italian Food Pasta"
+              />
+              <h3>Italian Food Pasta</h3>
+              <div class="item-info">
+                <span class="rating">★ 4.7</span>
+                <span class="price">$22.00</span>
+              </div>
+              <button class="add-to-cart" onclick="addToCart(this)">
+                Add To Cart
+              </button>
+            </div>
+            <div
+              class="popular-item"
+              data-name="Shrimp Prawns Paella"
+              data-price="19.00"
+              data-rating="4.9"
+              data-image="Images/Shrimp-prawns-paella.jpg"
+            >
+              <img
+                src="Images/Shrimp-prawns-paella.jpg"
+                alt="Shrimp Prawns Paella"
+              />
+              <h3>Shrimp Prawns Paella</h3>
+              <div class="item-info">
+                <span class="rating">★ 4.9</span>
+                <span class="price">$19.00</span>
+              </div>
+              <button class="add-to-cart" onclick="addToCart(this)">
+                Add To Cart
+              </button>
+            </div>
+            <div
+              class="popular-item"
+              data-name="Meal Cheese Kohlrabi"
+              data-price="21.00"
+              data-rating="5.0"
+              data-image="Images/meal-cheese-kohlrabi.jpg"
+            >
+              <img
+                src="Images/meal-cheese-kohlrabi.jpg"
+                alt="Meal Cheese Kohlrabi"
+              />
+              <h3>Meal Cheese Kohlrabi</h3>
+              <div class="item-info">
+                <span class="rating">★ 5.0</span>
+                <span class="price">$21.50</span>
+              </div>
+              <button class="add-to-cart" onclick="addToCart(this)">
+                Add To Cart
+              </button>
+            </div>
+            <div
+              class="popular-item"
+              data-name="Mushrooms French Dish"
+              data-price="18.00"
+              data-rating="4.9"
+              data-image="Images/mushrooms.jpg"
+            >
+              <img src="Images/mushrooms.jpg" alt="Mushrooms French Dish" />
+              <h3>Mushrooms French Dish</h3>
+              <div class="item-info">
+                <span class="rating">★ 4.9</span>
+                <span class="price">$18.00</span>
+              </div>
+              <button class="add-to-cart" onclick="addToCart(this)">
+                Add To Cart
+              </button>
+            </div>
+            <div
+              class="popular-item"
+              data-name="Chicken Bacon"
+              data-price="24.00"
+              data-rating="4.8"
+              data-image="Images/recipe-chicken-bacon.jpg"
+            >
+              <img src="Images/recipe-chicken-bacon.jpg" alt="Chicken Bacon" />
+              <h3>Chicken Bacon</h3>
+              <div class="item-info">
+                <span class="rating">★ 4.8</span>
+                <span class="price">$24.00</span>
+              </div>
+              <button class="add-to-cart" onclick="addToCart(this)">
+                Add To Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <button class="see-more">See More Products</button>
+      </section>
+
+      <!-- Services -->
+      <section class="services">
+        <h1>Why Choose Our Favorite Food</h1>
+        <div class="service-items">
+          <div class="service-item">
+            <img src="Images/knife-and-spoon.png" alt="Qualityfull Food" />
+            <h3>Qualityfull Food</h3>
+            <p>
+              At Good Food, we pride ourselves on serving top-notch quality food
+              that tantalizes your taste buds. Our chefs use only the freshest
+              ingredients to ensure every dish is a culinary masterpiece.
+            </p>
+          </div>
+          <div class="service-item">
+            <img src="/Images/spoon-and-fork.png" alt="Healthy Food" />
+            <h3>Healthy Food</h3>
+            <p>
+              Healthy living starts with what you eat, and at Good Food, we're
+              committed to providing nutritious and delicious meals. From fresh
+              salads to protein-packed entrees, our menu caters to your
+              health-conscious choices.
+            </p>
+          </div>
+          <div class="service-item">
+            <img src="Images/fast-delivery.png" alt="Fast Delivery" />
+            <h3>Fast Delivery</h3>
+            <p>
+              Time is precious, and we value yours. With our lightning-fast
+              delivery service, your favorite meals are just a click away.
+              Experience the convenience of prompt delivery without compromising
+              on quality.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- testimonials -->
+      <section class="testimonials">
+        <h2>Our Happy Client Says</h2>
+        <div class="testimonial-container">
+          <div class="testimonial">
+            <button class="testimonial-nav left">
+              <i class="fa-solid fa-circle-left"></i>
+            </button>
+            <div class="testimonial-content">
+              <img src="/Images/client.png" alt="Client" />
+              <h3>Williams Jhone</h3>
+              <p>CEO & Co-Founder</p>
+              <p>
+                "As the CEO and Co-Founder, I'm proud to lead our team in
+                delivering exceptional service. Our commitment to excellence
+                ensures that every customer experience is nothing short of
+                amazing."
+              </p>
+            </div>
+            <button class="testimonial-nav right">
+              <i class="fa-solid fa-circle-right"></i>
+            </button>
+          </div>
+          <div class="testimonial-image">
+            <img src="Images/foods.jpg" alt="Burger and Fries" />
+          </div>
+        </div>
+      </section>
+
+      <!-- newsletter -->
+      <section class="newsletter">
+        <div class="newsletter-content">
+          <div class="newsletter-image">
+            <img src="Images/big-burger.jpg" alt="Burger" />
+          </div>
+          <div class="newsletter-text">
+            <h2>Subscribe To Our Newsletter</h2>
+            <p>
+              Stay updated with the latest news, exclusive offers, and delicious
+              recipes. Join our newsletter and never miss out on exciting
+              updates from Good Food. Subscribe now and get a special discount
+              on your first order!
+            </p>
+            <div class="input-container">
+              <input
+                type="email"
+                id="emailInput"
+                placeholder="Type your email..."
+              />
+              <button class="subscribe" onclick="subscribe()">Subscribe</button>
+            </div>
+            <p id="successMessage" style="color: green; display: none">
+              Subscription successful!
+            </p>
+            <p id="errorMessage" style="color: red; display: none">
+              Please enter a valid email address.
+            </p>
+            <p id="emptyMessage" style="color: red; display: none">
+              Please enter an email address.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section about">
+          <div class="logo-text">
+            <img src="Images/logo.png" alt="Food Logo" class="logo" />
+            <h3>Good Food</h3>
+          </div>
+          <p>
+            Thank you for visiting Good Food. We hope you enjoyed your
+            experience. See you again soon!
+          </p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/"
+              ><img src="Images/facebook.png" alt="Facebook"
+            /></a>
+            <a href="https://www.twitter.com/"
+              ><img src="Images/twitter.png" alt="Twitter"
+            /></a>
+            <a href="https://www.linkedIn.com/"
+              ><img src="Images/linkedin.png" alt="LinkedIn"
+            /></a>
+            <a href="https://www.instagram.com/"
+              ><img src="Images/instagram.png" alt="Instagram"
+            /></a>
+          </div>
+        </div>
+        <div class="footer-section links">
+          <h3>Opening Restaurant</h3>
+          <ul>
+            <li>Sat-Wet: 09:00am-10:00PM</li>
+            <li>Thursday: 09:00am-11:00PM</li>
+            <li>Friday: 09:00am-8:00PM</li>
+          </ul>
+        </div>
+        <div class="footer-section links">
+          <h3>User Link</h3>
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Order Delivery</a></li>
+            <li><a href="#">Payment & Tax</a></li>
+            <li><a href="#">Terms of Services</a></li>
+          </ul>
+        </div>
+        <div class="footer-section contact">
+          <h3>Contact Us</h3>
+          <ul>
+            <li>Mohammadpur, Dhaka</li>
+            <li>+88 017 0000 0000</li>
+            <li>+88 018 0000 0000</li>
+          </ul>
+          <div class="food-email">
+            <input type="email" placeholder="Enter your email..." />
+            <button class="food-subscribe-btn">
+              <i class="fa-solid fa-circle-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>

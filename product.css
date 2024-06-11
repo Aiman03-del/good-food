@@ -1,0 +1,152 @@
+/* Product section */
+.most-popular {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.most-popular h4 {
+  font-size: 24px;
+  color: #666;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.most-popular h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.popular-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+}
+.cart-items {
+  text-align: center;
+}
+.popular-item {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.popular-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.popular-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.popular-item h3 {
+  font-size: 20px;
+  color: #333;
+  margin: 15px 0 10px;
+}
+
+.item-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+  font-size: 16px;
+}
+
+.rating {
+  font-size: 18px;
+  color: #fcb103;
+}
+
+.price {
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+}
+
+.add-to-cart {
+  width: 100%;
+  background-color: #fcb103;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+.remove-btn {
+  background-color: #fcb103;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 15px 30px;
+  cursor: pointer;
+  margin-top: 40px;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+.remove-btn:hover {
+  background-color: #e67e22;
+}
+.add-to-cart:hover {
+  background-color: #e67e22;
+}
+
+.see-more {
+  background-color: #fcb103;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 15px 30px;
+  cursor: pointer;
+  margin-top: 40px;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.see-more:hover {
+  background-color: #e67e22;
+}
+
+.extra-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 30px;
+}
+/* For mobile devices */
+@media (max-width: 767px) {
+  .most-popular {
+    margin: auto;
+    text-align: center;
+  }
+  .popular-items {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .popular-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+/* For tablet devices */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .popular-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

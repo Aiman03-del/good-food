@@ -1,0 +1,133 @@
+.newsletter {
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.newsletter-content {
+  background-color: #1a1a1a;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px;
+  gap: 40px;
+}
+
+.newsletter-image img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 15px;
+}
+
+.newsletter-text {
+  flex: 1;
+}
+
+.newsletter-text h2 {
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.newsletter-text p {
+  font-size: 16px;
+  color: #bbb;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 15px;
+  border: 1px solid #444;
+  border-radius: 30px;
+  font-size: 16px;
+  outline: none;
+  background-color: #333;
+  color: #fff;
+}
+
+.input-container .subscribe {
+  background-color: #fcb103;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 30px;
+  cursor: pointer;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .newsletter {
+    padding-left: 30px;
+  }
+  .newsletter-content {
+    width: 345px;
+    margin: auto 0px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  .newsletter-image img {
+    width: 85%;
+    margin-right: 5px;
+  }
+  .newsletter-text {
+    margin: auto 10px;
+  }
+  .newsletter-text h2 {
+    font-size: 20px;
+  }
+  .newsletter-text p {
+    font-size: 16px;
+  }
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+/* Responsive for tablets */
+@media (min-width: 481px) and (max-width: 1024px) {
+  .newsletter-content {
+    max-width: 700px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .newsletter-image img {
+    max-width: 40%;
+    margin-right: 20px;
+  }
+
+  .input-container input {
+    padding: 15px;
+    font-size: 16px;
+  }
+
+  .input-container .subscribe {
+    padding: 15px 30px;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,163 @@
+header header {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo h3 {
+  display: flex;
+  align-items: center;
+  font-family: "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.logo img {
+  max-height: 40px;
+  margin-right: 10px;
+}
+
+.nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav li {
+  margin: 0 15px;
+}
+
+.nav a {
+  text-decoration: none;
+  font-family: "Arial", sans-serif;
+  font-size: 18px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #007bff;
+}
+
+.search-bar {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-right: 10px;
+  transition: border-color 0.3s;
+}
+
+.search-bar input:focus {
+  border-color: #fcb103;
+  outline: none;
+}
+
+.search-bar button {
+  padding: 8px 12px;
+  border: none;
+  background-color: #fcb103;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 5px;
+  transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+  background-color: #e67e22;
+}
+
+.search-bar .search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar .search i,
+.search-bar .cart i {
+  font-size: 18px;
+}
+
+.search-bar .cart {
+  margin-left: 10px;
+  color: #fff;
+}
+
+.search-bar .cart:hover {
+  background-color: #e67e22;
+}
+@media (max-width: 768px) {
+  header nav {
+    margin: auto 10px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+  }
+  .logo {
+    flex: 1;
+  }
+  .nav {
+    flex: 2;
+  }
+
+  .search-bar {
+    flex: 3;
+    width: 100%;
+    margin: auto 10px;
+    justify-content: center;
+  }
+}
+/* Responsive styling for tablet devices */
+@media (max-width: 1024px) and (min-width: 769px) {
+  header nav {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    flex: 1;
+  }
+
+  .nav {
+    flex: 1;
+    justify-content: center;
+  }
+
+  .search-bar {
+    flex: 1;
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .search-bar input {
+    width: 80%;
+  }
+
+  .search-bar button {
+    padding: 8px 12px;
+  }
+}

@@ -1,0 +1,291 @@
+.bike-riding {
+  margin: 20px 0;
+  max-width: 240px;
+  height: 25px;
+  padding: 20px;
+  display: flex;
+  background: #fcb103;
+  border-radius: 60px;
+  cursor: pointer;
+}
+
+.bike-riding button {
+  font-size: 18px;
+  font-weight: 800;
+  color: #fff;
+  width: 150px;
+  height: 30px;
+  background: #fcb103;
+  border: none;
+}
+
+.bike-riding img {
+  width: 60px;
+  height: 30px;
+}
+
+.hero {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+  background-color: #f9f9f9;
+}
+
+.hero-text {
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.hero-text h1 {
+  font-size: 60px;
+}
+
+.hero-text h1 span {
+  color: #fcb103;
+}
+
+.hero-text p {
+  font-size: 18px;
+  color: #555;
+}
+
+.food-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.food-buttons button {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.order-now {
+  background-color: #fcb103;
+  color: #fff;
+}
+
+.order-process {
+  width: 206px;
+}
+
+.order-process button {
+  background-color: #fff;
+  color: #fcb103;
+}
+
+.order-process img {
+  width: 20px;
+  height: 20px;
+  margin: -3px 4px;
+}
+
+.order-process button:hover {
+  color: #fff;
+  background-color: #fcb103;
+}
+
+.food-images {
+  margin: 45px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.food-item {
+  background-color: #fff;
+  text-align: center;
+  width: 255px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.food-item img {
+  max-width: 237px;
+  height: 165px;
+  border-radius: 10px;
+}
+
+.food-item h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.food-item p {
+  margin: 5px 0;
+  font-weight: 500;
+}
+
+.food-item .price {
+  color: #d74627;
+  font-weight: bold;
+}
+/* For mobile devices */
+@media (max-width: 767px) {
+  .hero {
+    flex-direction: column;
+    padding: 30px;
+    overflow-x: hidden;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .hero-text h1 {
+    font-size: 55px;
+  }
+  .hero-text p {
+    font-size: 15px;
+    color: #555;
+  }
+  .food-buttons button {
+    font-size: 9px;
+  }
+  .bike-riding {
+    margin: auto;
+    width: 169px;
+    height: 15px;
+    padding-top: 6px;
+  }
+  .bike-riding button {
+    font-size: 14px;
+  }
+  .bike-riding img {
+    width: 45%;
+    height: 24px;
+  }
+  .food-images {
+    margin-left: 0;
+  }
+}
+/* For tablet devices */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero {
+    padding: 50px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-text {
+    max-width: 70%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .bike-riding {
+    margin: auto;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .food-buttons {
+    margin: auto 78px;
+  }
+  .food-images {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .food-item {
+    width: 100%;
+    max-width: none;
+  }
+  .food-item img {
+    max-width: 385px;
+    height: 230px;
+    border-radius: 10px;
+  }
+}
+
+/* info section */
+.info-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 23px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  padding: 30px;
+  max-width: 1340px;
+}
+
+.timer {
+  text-align: center;
+}
+.location {
+  text-align: center;
+}
+.phone {
+  text-align: center;
+}
+
+.icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.text h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2em;
+}
+
+.text p {
+  margin: 0;
+  color: gray;
+}
+/* For mobile devices */
+@media (max-width: 767px) {
+  .info-section {
+    flex-direction: column;
+    padding: 20px;
+    overflow-x: hidden;
+  }
+
+  .timer,
+  .location,
+  .phone {
+    margin-bottom: 20px;
+  }
+
+  .icon img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .text h3 {
+    font-size: 1em;
+  }
+}
+/* For tablet devices */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .info-section {
+    overflow-x: hidden;
+    flex-direction: column; /* Arrange items vertically on tablets */
+    padding: 20px; /* Adjust padding for better spacing on tablets */
+    border-radius: 15px; /* Reduce border-radius for a more compact look */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adjust box shadow */
+  }
+
+  .info-section > div {
+    margin-bottom: 20px; /* Add bottom margin for spacing between items */
+  }
+
+  .icon img {
+    width: 40px; /* Reduce icon size for better proportion on tablets */
+    height: 40px;
+  }
+
+  .text h3 {
+    font-size: 1em; /* Reduce font size for better readability on tablets */
+  }
+}

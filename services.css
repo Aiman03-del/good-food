@@ -1,0 +1,97 @@
+/* Services */
+.services {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.services h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 50px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.services h1::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background-color: #fcb103;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.service-items {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.service-item {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 30px;
+  width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-item:hover {
+  transform: translateY(-30px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.service-item img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.service-item h3 {
+  font-size: 24px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.service-item p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* For screens smaller than 768px (tablet portrait) */
+@media (max-width: 768px) {
+  .services {
+    padding: 40px 20px; /* Adjust padding */
+  }
+
+  .services h1 {
+    font-size: 28px; /* Adjust font size */
+    margin-bottom: 30px; /* Adjust margin */
+  }
+
+  .service-items {
+    gap: 30px;
+  }
+
+  .service-item {
+    width: calc(100% - 40px); /* Adjust width */
+    max-width: none; /* Remove max-width */
+  }
+}
+
+/* For screens larger than 768px (tablet landscape and desktop) */
+@media (min-width: 769px) {
+  .service-item {
+    width: 300px; /* Reset width for tablet landscape and desktop */
+    max-width: 100%; /* Reset max-width for tablet landscape and desktop */
+  }
+}

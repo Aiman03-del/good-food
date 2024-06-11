@@ -1,0 +1,179 @@
+.footer {
+  background-color: #f9f9f9;
+  padding: 40px 0;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+  margin: 20px;
+}
+
+.footer .logo {
+  max-width: 50px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.logo-text {
+  display: flex;
+  align-items: center;
+  margin: 6px -40px;
+}
+
+.footer-section.about h3,
+.footer p {
+  margin: 0;
+}
+
+.footer-section.about h3 {
+  font-size: 24px;
+}
+
+.footer p {
+  color: #777;
+  line-height: 1.6;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+  color: #777;
+}
+
+.footer-section ul li a {
+  color: #777;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #fcb103;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+.social-icons img {
+  width: 30px;
+}
+
+.social-icons a:hover {
+  transform: translateY(-20%);
+}
+
+.food-email {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.food-email input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  outline: none;
+  margin-right: 10px;
+  flex: 1;
+}
+
+.food-subscribe-btn {
+  color: #fcb103;
+  border: none;
+  font-size: 35px;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .footer-section {
+    flex-basis: 100%;
+  }
+  .logo-text {
+    margin: auto;
+  }
+}
+
+/* @media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    margin: 10px 0;
+    text-align: center;
+  }
+  .logo-text {
+    margin-left: 30px;
+  }
+  .footer .logo {
+    margin-right: 0;
+  }
+
+  .footer-section h3 {
+    margin-top: 20px;
+  }
+
+  .footer-section ul li {
+    margin-bottom: 8px;
+  }
+
+  .food-email {
+    margin-top: 20px;
+    flex-direction: row;
+  }
+
+  .food-email input {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 769px) {
+  .footer-container {
+    justify-content: space-between;
+  }
+
+  .footer-section {
+    flex: 1;
+    margin: 20px;
+    min-width: auto;
+    text-align: left;
+  }
+
+  .footer-section.about {
+    flex: 2;
+  }
+
+  .footer-section.contact {
+    flex: 1;
+  }
+} */
